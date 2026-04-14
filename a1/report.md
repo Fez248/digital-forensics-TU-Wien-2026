@@ -111,6 +111,6 @@ like this:
       8        yes         yes        yes          yes        288.497 y
 
 
-**What password complexity is needed for a 10-year secure container?**
+**What password complexity is needed for a 10-year secure container?**   
 At least it should be 6 digits long and include uppercase letters,
 lowercase letters, numbers and special characters.

@@ -1,9 +1,10 @@
 # Report
+Secret in veracrypt container: 55bfe819583065d096e10f49c86747ae4e3b87e9a7  
+
 ## Factual part
 On the 13 of April 2026 I started my work on the container 
 "container\_12541897.hc", property of Spongebob Squarepants. All work was
-conducted under a machine with:
-Under a system with:
+conducted under a system with:
 ```bash
 Ubuntu 24.04.4 LTS
 ```
@@ -15,7 +16,7 @@ This value was obtained using the tool:
 ```bash
 sha256sum (GNU coreutils) 9.4
 ```
-Before prociding I made a copy of the container and worked on that copy.
+Before proceeding I made a copy of the container and worked on that copy.
 It was also verified that the copy did not modified any data by calculating
 the hash again:
 ```bash 
@@ -23,9 +24,9 @@ the hash again:
 770be38a44dcbd4e4c5dce5d8b9031bc3b41029cfe2f37530d6091e73b1f1e1f  container\_12541897\_copy.hc
 ```
 Now it is possible to start. The task that was given to me was to crack the
-password of the container. Every veracrypt container has it's password 
-stores in the first 512 btyes of the container (you can think of a byte as 
-an unit of information). In order to decrypt the container I need to get 
+password of the container. Every veracrypt container has its password
+stored in the first 512 bytes of the container (you can think of a byte as
+a unit of information). In order to decrypt the container I need to get
 that password. The python tool "veracrypt2hashcat.py" was used for that
 purpose, because there is no version control for this tool, it will be
 uploaded with the report. The hashed value of the tool is:
@@ -65,7 +66,7 @@ c21c67ec7d1c9e7a8c397acb68dd36af82b119ad1fe2a3c1d03cfacd1b433b3a  trippin.jpg
 1a560c55c7b7c59882713876cf9460773451cf277621deb36cf9d65ed297a4f9  wasted.jpg
 ```
 
-Finally, the copy is hashed again to verify that nothing has being
+Finally, the copy is hashed again to verify that nothing has been
 modified.
 ```bash
 770be38a44dcbd4e4c5dce5d8b9031bc3b41029cfe2f37530d6091e73b1f1e1f  container\_12541897\_copy.hc
@@ -78,7 +79,7 @@ The password for the container "container\_12541897.hc" with hash,
 "i1cv".
 
 **What is the “secret” in the container?**   
-The secret in the container is a .txt file called secreth with the
+The secret in the container is a .txt file called secret.txt with the
 followig key inside:
 55bfe819583065d096e10f49c86747ae4e3b87e9a7
 
@@ -111,5 +112,5 @@ like this:
 
 
 **What password complexity is needed for a 10-year secure container?**
-
-secret in veracrypt container: 55bfe819583065d096e10f49c86747ae4e3b87e9a7
+At least it should be 6 digits long and include uppercase letters,
+lowercase letters, numbers and special characters.

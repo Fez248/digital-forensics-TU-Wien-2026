@@ -1,49 +1,3 @@
-# Questions
-
-**What is the password of the container?**   
-The password for the container "container\_12541897.hc" with hash,
-770be38a44dcbd4e4c5dce5d8b9031bc3b41029cfe2f37530d6091e73b1f1e1f, is: 
-"i1cv".
-
-**What is the “secret” in the container?**   
-The secret in the container is a .txt file called secreth with the
-followig key inside:
-55bfe819583065d096e10f49c86747ae4e3b87e9a7
-
-**What was saved in the container by Spongebob?**   
-awesome.jpg  secret.txt  trippin.jpg  wasted.jpg
-He had three images and a txt file with the secret key.
-
-**How much time is needed for brute forcing different password lengths and
-character sets?**   
-Using hashcat in my machine, GeForce RTX 3050 Ti Mobile, and doing the scan
-in a bench in the street of Vienna, so my laptop does not overheat, I
-managed to get an average of 670 H/s. This is taking into account that the
-algorithm I am trying to break is sha256, which highly affects the speed,
-it is a very slow algorithm to break.
-
-Assuming english alphabet, 26 letters, 10 digits and 32 special characters
-the worst-case (for the hacker) scenario to break a sha256 hash looks 
-like this:
-
-    Digits  LowerCase   UpperCase   Numbers   SpecialChars    Time
------------------------------------------------------------------------
-      4        yes         yes        no           no         3,04    h 
-      4        yes         yes        yes          no         6,13    h
-      4        yes         yes        yes          yes        1,4     d 
-      6        yes         yes        no           no         342     d 
-      6        yes         yes        yes          no         2,69    y 
-      6        yes         yes        yes          yes        32,7    y
-      8        yes         yes        no           no         2530    y
-      8        yes         yes        yes          no         10334   y
-      8        yes         yes        yes          yes        288.497 y
-
-
-**What password complexity is needed for a 10-year secure container?**
-
-
-------------------------
-
 # Report
 ## Factual part
 On the 13 of April 2026 I started my work on the container 
@@ -118,9 +72,44 @@ modified.
 ```
 
 ## Expert testimony
-answers the specific questions
-includes expert interpretation
+**What is the password of the container?**   
+The password for the container "container\_12541897.hc" with hash,
+770be38a44dcbd4e4c5dce5d8b9031bc3b41029cfe2f37530d6091e73b1f1e1f, is: 
+"i1cv".
+
+**What is the “secret” in the container?**   
+The secret in the container is a .txt file called secreth with the
+followig key inside:
+55bfe819583065d096e10f49c86747ae4e3b87e9a7
+
+**What was saved in the container by Spongebob?**   
+awesome.jpg  secret.txt  trippin.jpg  wasted.jpg
+He had three images and a txt file with the secret key.
+
+**How much time is needed for brute forcing different password lengths and
+character sets?**   
+Using hashcat in my machine, GeForce RTX 3050 Ti Mobile, and doing the scan
+in a bench in the street of Vienna, so my laptop does not overheat, I
+managed to get an average of 670 H/s. This is taking into account that the
+algorithm I am trying to break is sha256, which highly affects the speed,
+it is a very slow algorithm to break.
+
+Assuming english alphabet, 26 letters, 10 digits and 32 special characters
+the worst-case (for the hacker) scenario to break a sha256 hash looks 
+like this:
+
+    Digits  LowerCase   UpperCase   Numbers   SpecialChars    Time
+      4        yes         yes        no           no         3,04    h 
+      4        yes         yes        yes          no         6,13    h
+      4        yes         yes        yes          yes        1,4     d 
+      6        yes         yes        no           no         342     d 
+      6        yes         yes        yes          no         2,69    y 
+      6        yes         yes        yes          yes        32,7    y
+      8        yes         yes        no           no         2530    y
+      8        yes         yes        yes          no         10334   y
+      8        yes         yes        yes          yes        288.497 y
 
 
+**What password complexity is needed for a 10-year secure container?**
 
 secret in veracrypt container: 55bfe819583065d096e10f49c86747ae4e3b87e9a7

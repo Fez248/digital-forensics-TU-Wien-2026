@@ -1,25 +1,21 @@
 # Questions
 
-**What is the password of the container?**
-
+**What is the password of the container?**   
 The password for the container "container\_12541897.hc" with hash,
 770be38a44dcbd4e4c5dce5d8b9031bc3b41029cfe2f37530d6091e73b1f1e1f, is: 
 "i1cv".
 
-**What is the “secret” in the container?**
-
+**What is the “secret” in the container?**   
 The secret in the container is a .txt file called secreth with the
 followig key inside:
 55bfe819583065d096e10f49c86747ae4e3b87e9a7
 
-**What was saved in the container by Spongebob?**
-
+**What was saved in the container by Spongebob?**   
 awesome.jpg  secret.txt  trippin.jpg  wasted.jpg
 He had three images and a txt file with the secret key.
 
 **How much time is needed for brute forcing different password lengths and
-character sets?**
-
+character sets?**   
 Using hashcat in my machine, GeForce RTX 3050 Ti Mobile, and doing the scan
 in a bench in the street of Vienna, so my laptop does not overheat, I
 managed to get an average of 670 H/s. This is taking into account that the
